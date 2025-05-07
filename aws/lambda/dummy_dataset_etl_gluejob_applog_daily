@@ -1,0 +1,16 @@
+import boto3
+import datetime
+
+client = boto3.client('glue')
+
+def lambda_handler(event, context):
+    targetdate = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))) - datetime.timedelta(days=1)
+    year = targetdate.strftime('%Y')
+    month = targetdate.strftime('%m')
+    day = targetdate.strftime('%d')
+    response = client.start_job_run(JobName = 'dummy_dataset_etl_app_log_daily',
+                                    Arguments = {
+                                        '--year_partition_value': year,
+                                        '--month_partition_value': month,
+                                        '--day_partition_value': day
+                                    })
