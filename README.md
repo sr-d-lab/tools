@@ -7,14 +7,12 @@
 ```
 tools/
 ├── aws/
-│ ├── glue/
-│ │ ├── etl_app_log_daily.py # Glue ETLスクリプト（公開用にダミー化済み）
-│ └── lambda
-│   └── etl_app_log_daily_lambda.py # Glueジョブ起動用 Lambda スクリプト（公開用にダミー化済み）
+│ ├── glue/ # Glue ETLスクリプト（公開用にダミー化済み）
+│ └── lambda # Glueジョブ起動用 Lambda スクリプト（公開用にダミー化済み）
 ├── gcp/
 │ ├── GAS/
 │ └── bigquery/
-│ └── sql_samples/
+│   └── sql_samples/ # BigQueryサンプル
 ├── looker/
 │ └── product_kpi/ # Lookerダッシュボード定義（YAML形式などで保存）
 └── blog_link.md # 過去執筆記事リンク集
