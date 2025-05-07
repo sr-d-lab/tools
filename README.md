@@ -1,59 +1,48 @@
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
+# 📦 Tools
 
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
+このリポジトリは、業務で利用している各種ツール・サービスの設定ファイルやサンプルスクリプト、運用ドキュメントを集約したものです。  
+データ分析基盤、AWS、GCP、Looker などの実践例をまとめ、社内外問わず参考にできる情報共有を目的としています。
 
-"hoge"が何かを簡潔に紹介する
+## 📁 ディレクトリ構成
 
-# DEMO
+tools/
+├── aws/
+│ ├── glue/
+│ │ ├── etl_app_log_daily.py # Glue ETLスクリプト（公開用にダミー化済み）
+│ │ └── etl_app_log_daily_lambda.py # Glueジョブ起動用 Lambda スクリプト（公開用にダミー化済み）
+├── gcp/
+│ ├── GAS/
+│ └── bigquery/
+│ └── sql_samples/
+├── looker/
+│ └── product_kpi/ # Lookerダッシュボード定義（YAML形式などで保存）
+└── blog_link.md # 過去執筆記事リンク集
 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
 
-# Features
+## 📌 各フォルダの概要
 
-"hoge"のセールスポイントや差別化などを説明する
+### aws/glue
 
-# Requirement
+Glueを使ったETLおよびジョブ起動Lambdaのサンプルコードを格納しています。  
+社外公開に適した形にダミー化していますので、導入検討・参考用途として利用可能です。
 
-"hoge"を動かすのに必要なライブラリなどを列挙する
+### gcp/bigquery/sql_samples
 
-* huga 3.5.2
-* hogehuga 1.0.2
+BigQueryで活用しているSQLサンプルを保存しています。  
+運用時のクエリ例やパターン集として参考にできます。
 
-# Installation
+### looker/product_kpi
 
-Requirementで列挙したライブラリなどのインストール方法を説明する
+Lookerのダッシュボード設定（LookMLやYAML）を管理しています。  
+プロジェクトで利用しているKPIダッシュボードの定義をまとめています。
 
-```bash
-pip install huga_package
-```
+### blog_link.md
 
-# Usage
+過去に公開した技術記事・登壇資料などのリンク集です。
 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+## 📖 ライセンス・注意事項
 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
+- 本リポジトリに含まれるスクリプト・設定ファイルは社外公開向けに一部内容をダミー化しています。
+- システム固有の情報や機密情報は含まれていませんが、利用は自己責任にてお願いいたします。
+- 記載内容は個人または所属組織の見解であり、公式なサポートを受けられるものではありません。
 
-# Note
-
-注意点などがあれば書く
-
-# Author
-
-作成情報を列挙する
-
-* 作成者
-* 所属
-* E-mail
-
-# License
-ライセンスを明示する
-
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-社内向けなら社外秘であることを明示してる
-
-"hoge" is Confidential.
