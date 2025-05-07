@@ -9,8 +9,8 @@ tools/
 ├── aws/
 │ ├── glue/
 │ │ ├── etl_app_log_daily.py # Glue ETLスクリプト（公開用にダミー化済み）
-│ │ └── etl_app_log_daily_lambda.py # Glueジョブ起動用 Lambda スクリプト（公開用にダミー化済み）
 │ └── lambda
+│   └── etl_app_log_daily_lambda.py # Glueジョブ起動用 Lambda スクリプト（公開用にダミー化済み）
 ├── gcp/
 │ ├── GAS/
 │ └── bigquery/
